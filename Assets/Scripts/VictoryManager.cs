@@ -64,6 +64,7 @@ public class VictoryManager : MonoBehaviour
         {
             LevelAccesor.Instance.LevelProgress(_index);
         }
+        
     }
 
 }

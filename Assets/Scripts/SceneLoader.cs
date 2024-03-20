@@ -18,11 +18,13 @@ public class SceneLoader : MonoBehaviour
     }
     public void GoToMenuFromWin()
     {
+        Time.timeScale = 1f;
         LevelAccesor.Instance.LevelProgress(_index);
         SceneManager.LoadScene("MainMenu");
     }
     public void GoToNextLevel()
     {
+        Time.timeScale = 1f;
         LevelAccesor.Instance.LevelProgress(_index);
         int currentIndex = SceneManager.GetActiveScene().buildIndex;
         int nextIndex = currentIndex + 1;
